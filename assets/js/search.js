@@ -24,4 +24,3 @@ if (document.getElementById('catalogue-root')) {
     document.getElementById('catalogue-root')
   );
 }
-
