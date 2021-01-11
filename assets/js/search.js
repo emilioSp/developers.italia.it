@@ -1,26 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { SearchCatalogue } from './components/SearchCatalogue.js';
-import { CatalogueResults } from './components/CatalogueResults.js';
+import React from "react";
+import ReactDOM from "react-dom";
+import { CatalogueSearch } from "./components/CatalogueSearch.js";
+import { CatalogueResults } from "./components/CatalogueResults.js";
 
-console.log('qui');
+console.log("qui");
 
-if (document.getElementById('search-root')) {
-  console.log('quo');
+if (document.getElementById("search-root")) {
+  console.log("quo");
   ReactDOM.render(
     <React.StrictMode>
-      <SearchCatalogue />
+      <CatalogueSearch />
     </React.StrictMode>,
-    document.getElementById('search-root')
+    document.getElementById("search-root")
   );
 }
 
-if (document.getElementById('catalogue-root')) {
-  console.log('qua');
+if (document.getElementById("catalogue-root")) {
+  console.log("qua");
   ReactDOM.render(
     <React.StrictMode>
       <CatalogueResults />
     </React.StrictMode>,
-    document.getElementById('catalogue-root')
+    document.getElementById("catalogue-root")
   );
 }

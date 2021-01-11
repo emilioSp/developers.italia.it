@@ -29,9 +29,9 @@
         "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d _site"
     },
     "devDependencies": {
-        "@babel/core": "^7.11.1",
-        "@babel/plugin-transform-react-jsx": "^7.10.4",
-        "@babel/preset-env": "^7.11.0",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.12.10",
         "@commitlint/config-conventional": "^11.0.0",
         "autoprefixer": "^9.8.6",
         "babel-loader": "^8.1.0",
