@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-export const CatalogueSearch = () => {
+export const CatalogueSearch = React.forwardRef((props, ref) => {
   const [openModal, setOpenModal] = useState(false);
-  const el = document.getElementById('catalogue-search');
-  if (!el) return null;
 
   if (!openModal) {
     return ReactDOM.createPortal(
@@ -18,7 +16,7 @@ export const CatalogueSearch = () => {
           </div>
         </div>
       </a>,
-      el
+      ref
     );
   }
 
@@ -79,6 +77,8 @@ export const CatalogueSearch = () => {
         </div>
       </div>
     </div>,
-    el
+    ref
   );
-};
+});
+
+CatalogueSearch.displayName = 'CatalogueSearch';

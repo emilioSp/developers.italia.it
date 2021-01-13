@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
-export const CatalogueResults = () => {
-  const el = document.getElementById('catalogue-results');
-  if (!el) return null;
+export const CatalogueResults = React.forwardRef((props, ref) => {
+  useEffect(() => {
+    console.log(ref);
+  });
+
   return ReactDOM.createPortal(
     <div className="container page-searched-list">
       <div className="row">
@@ -311,6 +313,8 @@ export const CatalogueResults = () => {
         </div>
       </div>
     </div>,
-    el
+    ref
   );
-};
+});
+
+CatalogueResults.displayName = 'CatalogueResults';
