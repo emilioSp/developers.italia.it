@@ -125,6 +125,7 @@ esDevelopersItaliaManager.prototype.pagerCallback = function (event) {
 
   // Execute Current query.
   this.executeCurrentQuery();
+  console.log('test');
 };
 
 esDevelopersItaliaManager.prototype.setCurrentLanguage = function () {
